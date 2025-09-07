@@ -1,0 +1,13 @@
+{
+  "species": "Ashwagandha",
+  "gps": {
+    "lat": 26.9124,
+    "lng": 75.7873,
+    "altitude": 431
+  },
+  "timestamp": "2025-01-15T08:30:00Z",
+  "moisture": 12.5,
+  "farmerName": "Ram Kumar Sharma",
+  "farmerId": "FARMER_001",
+  "notes": "Organic harvest from certified farm"
+}

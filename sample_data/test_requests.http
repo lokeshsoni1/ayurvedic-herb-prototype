@@ -1,0 +1,35 @@
+### SIH25027 API Test Requests
+### Prototype developed by Team Hackon
+
+### 1. Health Check
+GET http://localhost:5000/health
+
+### 2. Submit Collection Event
+POST http://localhost:5000/api/farmer/upload
+Content-Type: application/json
+
+{
+  "species": "Ashwagandha",
+  "gps": {"lat": 26.9124, "lng": 75.7873},
+  "timestamp": "2025-01-15T08:30:00Z", 
+  "moisture": 12.5,
+  "farmerName": "Ram Kumar Sharma",
+  "farmerId": "FARMER_001"
+}
+
+### 3. Submit Quality Test
+POST http://localhost:5000/api/lab/upload
+Content-Type: application/json
+
+{
+  "batchID": "BATCH_ASH_001",
+  "dna": "ATCGATCGATCGATCGAATTCCGGAATTCGATCGATCGAATTCCGG",
+  "pesticide": 0.03,
+  "moisture": 12.5,
+  "heavyMetals": 0.01,
+  "labName": "Ayurveda Quality Labs Pvt Ltd",
+  "labId": "LAB_AQL_001"
+}
+
+### 4. Get Customer Provenance
+GET http://localhost:5000/api/customer/batch/BATCH_ASH_001

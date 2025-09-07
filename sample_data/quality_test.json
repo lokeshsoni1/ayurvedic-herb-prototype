@@ -1,0 +1,11 @@
+{
+  "batchID": "BATCH_ASH_001",
+  "dna": "ATCGATCGATCGATCGAATTCCGGAATTCGATCGATCGAATTCCGG",
+  "pesticide": 0.03,
+  "moisture": 12.5,
+  "heavyMetals": 0.01,
+  "labName": "Ayurveda Quality Labs Pvt Ltd",
+  "labId": "LAB_AQL_001",
+  "testDate": "2025-01-16T14:00:00Z",
+  "notes": "All parameters within acceptable limits"
+}
