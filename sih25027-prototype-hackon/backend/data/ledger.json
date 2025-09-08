@@ -1,0 +1,26 @@
+{
+  "transactions": [
+    {
+      "id": "tx_genesis_000",
+      "type": "genesis",
+      "data": {
+        "message": "HerbChain Traceability Genesis Block",
+        "team": "Team Hackon",
+        "problemStatement": "SIH25027",
+        "created": "2025-01-15T00:00:00.000Z"
+      },
+      "timestamp": "2025-01-15T00:00:00.000Z",
+      "hash": "0x0000000000000000000000000000000000000000000000000000000000000000",
+      "previousHash": "0x0000000000000000000000000000000000000000000000000000000000000000"
+    }
+  ],
+  "batches": [],
+  "compliance": [],
+  "metadata": {
+    "chainId": "herbchain-sih25027",
+    "networkName": "ayurveda-trace-network",
+    "created": "2025-01-15T00:00:00.000Z",
+    "team": "Team Hackon",
+    "version": "1.0.0"
+  }
+}

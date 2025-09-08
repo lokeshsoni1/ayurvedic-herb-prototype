@@ -1,0 +1,32 @@
+{
+  "_comment": "🔥 GENERATE NEXT: Sample lab quality test data",
+  "_description": "Sample JSON for lab quality test results",
+  "_team": "Prototype proudly built by Team Hackon for SIH25027",
+  
+  "batchID": "BATCH_ASH_001",
+  "dna": "ATCGATCGATCGATCGAATTCCGGAATTCGATCGATCGAATTCCGGATATCGATCG",
+  "pesticide": 0.03,
+  "pesticideUnit": "ppm",
+  "pesticideLimit": 0.1,
+  "moisture": 12.5,
+  "moistureUnit": "%",
+  "moistureRange": "10-15",
+  "heavyMetals": 0.01,
+  "heavyMetalsUnit": "ppm", 
+  "heavyMetalsLimit": 0.05,
+  "microbialLoad": "Within limits",
+  "aflatoxin": "Not detected",
+  "labName": "Ayurveda Quality Labs Pvt Ltd",
+  "labId": "LAB_AQL_001",
+  "labAddress": "Sector 18, Gurgaon, Haryana",
+  "testDate": "2025-01-16T10:15:00Z",
+  "reportFile": "quality_report_BATCH_ASH_001.pdf",
+  "testMethods": {
+    "dna": "PCR Amplification",
+    "pesticide": "GC-MS Analysis", 
+    "heavyMetals": "ICP-MS Analysis"
+  },
+  "certifiedBy": "Dr. Priya Sharma",
+  "verificationStatus": "PASSED",
+  "complianceStandards": ["AYUSH", "WHO-GMP", "ISO 17025"]
+}

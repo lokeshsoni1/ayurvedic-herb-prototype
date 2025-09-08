@@ -1,0 +1,23 @@
+{
+  "_comment": "🔥 GENERATE NEXT: Sample farmer collection event data",
+  "_description": "Sample JSON for farmer herb collection submission",
+  "_team": "Prototype proudly built by Team Hackon for SIH25027",
+  
+  "species": "Ashwagandha",
+  "gps": {
+    "lat": 26.9124,
+    "lng": 75.7873,
+    "altitude": 431,
+    "accuracy": "±3m"
+  },
+  "timestamp": "2025-01-15T08:30:00Z",
+  "moisture": 12.5,
+  "photo": "herb_collection_20250115.jpg",
+  "farmerName": "Ram Kumar Sharma",
+  "farmerId": "FARMER_001",
+  "farmAddress": "Village Kheri, Tehsil Sanganer, Jaipur, Rajasthan",
+  "certifications": ["Organic", "NPOP"],
+  "harvestMethod": "Hand-picked",
+  "weatherConditions": "Sunny, 28°C",
+  "notes": "Premium quality Ashwagandha roots harvested at optimal maturity"
+}

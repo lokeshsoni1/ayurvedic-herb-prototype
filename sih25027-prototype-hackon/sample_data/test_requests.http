@@ -1,0 +1,65 @@
+# 🔥 GENERATE NEXT: HTTP test requests for API testing
+# Sample API requests for HerbChain SIH25027 Prototype
+# Prototype proudly built by Team Hackon
+
+### Variables
+@baseUrl = http://localhost:5000/api
+@contentType = application/json
+
+### Health Check
+GET http://localhost:5000/health
+
+### 1. Farmer - Submit Collection Event
+POST {{baseUrl}}/farmer/upload
+Content-Type: {{contentType}}
+
+{
+  "species": "Ashwagandha",
+  "gps": {"lat": 26.9124, "lng": 75.7873},
+  "timestamp": "2025-01-15T08:30:00Z",
+  "moisture": 12.5,
+  "farmerName": "Ram Kumar Sharma",
+  "farmerId": "FARMER_001",
+  "notes": "Organic harvest from certified farm"
+}
+
+### 2. Lab - Submit Quality Test
+POST {{baseUrl}}/lab/upload  
+Content-Type: {{contentType}}
+
+{
+  "batchID": "BATCH_ASH_001",
+  "dna": "ATCGATCGATCGATCGAATTCCGGAATTC",
+  "pesticide": 0.03,
+  "moisture": 12.5,
+  "heavyMetals": 0.01,
+  "labName": "Ayurveda Quality Labs Pvt Ltd",
+  "labId": "LAB_AQL_001"
+}
+
+### 3. Processor - Generate QR Code
+POST {{baseUrl}}/processor/generate-qr
+Content-Type: {{contentType}}
+
+{
+  "batchID": "BATCH_ASH_001"
+}
+
+### 4. Customer - Get Batch Provenance
+GET {{baseUrl}}/customer/batch/BATCH_ASH_001
+
+### 5. Get All Batches (Processor)
+GET {{baseUrl}}/processor/batches
+
+### 6. Compliance - Update Status
+POST {{baseUrl}}/compliance/update
+Content-Type: {{contentType}}
+
+{
+  "batchID": "BATCH_ASH_001",
+  "ayushStatus": "APPROVED",
+  "nmpbStatus": "PENDING"
+}
+
+### 7. Compliance - Get Summary
+GET {{baseUrl}}/compliance/summary
